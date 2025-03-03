@@ -8,7 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Skills - Tamzidan</title>
+    <title>Skill - Tamzidan</title>
   </head>
   <body>
     <header>
@@ -26,25 +26,31 @@
       </nav>
     </header>
 
-    <section class="skills">
-      <h1>My Skills</h1>
-      <div class="skill">
-        <h2>HTML</h2>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 90%"></div>
-        </div>
+    <section class="Skill">
+      <h1>My Skill</h1>
+      <div class="services-item">
+        <i class="fa-solid fa-code services-icon"></i>
+        <h2>Web Development</h2>
+        <p>
+          Creating responsive and dynamic websites with modern technologies like
+          HTML, CSS, and JavaScript.
+        </p>
       </div>
-      <div class="skill">
-        <h2>CSS</h2>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 85%"></div>
-        </div>
+      <div class="services-item">
+        <i class="fa-solid fa-paint-brush services-icon"></i>
+        <h2>Web Design</h2>
+        <p>
+          Crafting visually appealing designs and user-friendly interfaces for a
+          seamless user experience.
+        </p>
       </div>
-      <div class="skill">
-        <h2>JavaScript</h2>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 75%"></div>
-        </div>
+      <div class="services-item">
+        <i class="fa-solid fa-edit services-icon"></i>
+        <h2>Content Creation</h2>
+        <p>
+          Providing high-quality scripts, blogs, and video content tailored to
+          your needs.
+        </p>
       </div>
     </section>
 
@@ -119,37 +125,35 @@
         }
       }
 
-      .skills {
+      .services {
         padding: 10rem 9% 5rem;
         text-align: center;
       }
 
-      .skills h1 {
+      .services h1 {
         font-size: 4rem;
         margin-bottom: 4rem;
       }
 
-      .skill {
+      .services-item {
         margin-bottom: 3rem;
       }
 
-      .skill h2 {
+      .services-icon {
+        font-size: 4rem;
+        color: #e3651d;
+        margin-bottom: 1.5rem;
+      }
+
+      .services-item h2 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
       }
 
-      .skill-bar {
-        width: 80%;
-        margin: 0 auto;
-        height: 2rem;
-        background-color: #333;
-        border-radius: 10px;
-        overflow: hidden;
-      }
-
-      .skill-progress {
-        height: 100%;
-        background-color: #e3651d;
+      .services-item p {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: #bbb;
       }
 
       @media (max-width: 600px) {
@@ -158,12 +162,20 @@
           font-size: 1.5rem;
         }
 
-        .skills h1 {
+        .services h1 {
           font-size: 3rem;
         }
 
-        .skill h2 {
+        .services-icon {
+          font-size: 3rem;
+        }
+
+        .services-item h2 {
           font-size: 2rem;
+        }
+
+        .services-item p {
+          font-size: 1.4rem;
         }
       }
     </style>
