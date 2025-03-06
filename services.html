@@ -9,50 +9,61 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Services - Tamzidan</title>
+    <title>Services - Abid Solihin</title>
   </head>
   <body>
     <header>
-      <a href="#" class="logo">Tamzidan</a>
+      <a href="#" class="logo">Abid Solihin</a>
       <div class="menu-toggle" id="mobile-menu">
         <i class="fa fa-bars"></i>
       </div>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html" class="active">Services</a>
-        <a href="skills.html">Skills</a>
-        <a href="education.html">Education</a>
-        <a href="experience.html">Experience</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" onclick="loadPage('index.html')">Home</a>
+        <a href="experience.html" onclick="loadPage('experience.html')">About</a>
+        <a href="education.html" onclick="loadPage('education.html')">Education</a>
+        <a href="services.html" class="active" onclick="loadPage('services.html')">Activity</a>
+        <a href="skills.html" onclick="loadPage('skills.html')">Skills</a>
+        <a href="contact.html" onclick="loadPage('contact.html')">Contact</a> 
       </nav>
     </header>
 
     <section class="services">
-      <h1>My Services</h1>
+      <h1>My Activity</h1>
       <div class="service-item">
-        <i class="fa-solid fa-code service-icon"></i>
-        <h2>Web Development</h2>
-        <p>
-          Creating responsive and dynamic websites with modern technologies like
-          HTML, CSS, and JavaScript.
-        </p>
-      </div>
-      <div class="service-item">
-        <i class="fa-solid fa-paint-brush service-icon"></i>
-        <h2>Web Design</h2>
-        <p>
-          Crafting visually appealing designs and user-friendly interfaces for a
-          seamless user experience.
-        </p>
-      </div>
-      <div class="service-item">
-        <i class="fa-solid fa-edit service-icon"></i>
-        <h2>Content Creation</h2>
-        <p>
-          Providing high-quality scripts, blogs, and video content tailored to
-          your needs.
-        </p>
-      </div>
+        <i class="fa-solid fa-user-tie" style="color: #e5973e; font-size: 50px;"></i>
+        <h2><span>President, Perak Matriculation Islamic Association</span></h2>
+        <p>Leads and oversees all organizational activities, represents the association, and ensures the implementation of Islamic programs.</p>
+    </div>
+
+    <div class="service-item">
+        <i class="fa-solid fa-user-tie" style="color: #e5973e; font-size: 50px;"></i>
+        <h2><span>Batch Leader, Perak Matriculation College</span></h2>
+        <p>Represents and coordinates student activities, fostering communication between students and administration.</p>
+    </div>
+
+    <div class="service-item">
+        <i class="fa-solid fa-user-tie" style="color: #e5973e; font-size: 50px;"></i>
+        <h2><span>Head Facilitator, Perak Matriculation College</span></h2>
+        <p>Oversees and coordinates facilitation programs, mentors facilitators, and ensures smooth execution of student activities.</p>
+    </div>
+
+    <div class="service-item">
+        <i class="fa-solid fa-trophy" style="color: #e5973e; font-size: 50px;"></i>
+        <h2><span>Best Presenter & Best Prototype, Physics Glider Competition</span></h2>
+        <p>Awarded for the best presentation and most outstanding glider prototype, excelling in clarity, innovation, design, and flight performance.</p>
+    </div>
+
+    <div class="service-item">
+        <i class="fa-solid fa-users" style="color: #e5973e; font-size: 50px;"></i>
+        <h2><span>Contingent Leader, Penang SUKMA 2022</span></h2>
+        <p>Managed the state’s sports delegation, ensuring athlete preparedness, team coordination, logistical arrangements, and overall performance.</p>
+    </div>
+
+    <div class="service-item">
+        <i class="fa-solid fa-gamepad" style="color: #e5973e; font-size: 50px;"></i>
+        <h2><span>Team Leader, Malaysia & UTM E-Sports Team</span></h2>
+        <p>Led and managed the Malaysia & UTM E-Sports Team, overseeing strategy, training, team coordination, and performance while representing the team in competitions.</p>
+    </div>
     </section>
 
     <style>
