@@ -12,77 +12,61 @@
   </head>
   <body>
     <header>
-      <a href="#" class="logo">Tamzidan</a>
+      <a href="#" class="logo">Abid Solihin</a>
       <nav>
         <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
+        <a href="experience.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="services.html">Activity</a>
         <a href="skills.html">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
         <a href="#contact" class="active">Contact</a>
       </nav>
     </header>
 
     <section id="contact" class="contact">
-      <h2
-        style="
-          text-align: center;
-          font-size: 4rem;
-          margin-bottom: 2rem;
-          margin-top: 10rem;
-        "
-      >
-        Contact <span>Us</span>
-      </h2>
       <div class="contact-container">
-        <form action="#" class="contact-form">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your Name"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="6"
-              placeholder="Your Message"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
+        <div class="contact-form">
+          <h2>Contact <span>Us</span></h2>
+          <form action="https://formspree.io/f/xkgoddpr" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
 
         <div class="contact-info">
-          <h3>Get in Touch</h3>
+          <h2>Get in <span>Touch</span></h2>
           <p>
             Email:
-            <a href="mailto:example@example.com" class="highlight-email"
-              >abidsolihin1@gmail.com</a
-            >
+            <a href="mailto:example@example.com" class="highlight-email">
+                 
+              <p>abidsolihin1@gmail.com</a></p>
           </p>
-          <p>Phone: +60 166670396</p>
+          <p>Phone: </p>
+          <p>+60 166670396</p>
           <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/abidsolihin/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>         
+            <a href="https://github.com/abidsolihin" target="_blank">
+              <i class="fa-brands fa-square-github"></i>
+            </a>
+            <a href="https://wa.me/60166670396" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>                      
+            <a href="https://www.instagram.com/abido.oooo/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -90,25 +74,35 @@
 
     <style>
       .contact {
-        background-color: #161616;
-        color: white;
-        padding: 5rem 9%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+  background-color: #161616;
+  color: white;
+  padding: 5rem 9%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem; /* Added extra space below navigation */
+}
 
-      .contact-container {
-        display: flex;
-        gap: 4rem;
-        justify-content: center;
-        flex-wrap: wrap;
-        max-width: 1200px;
-      }
+.contact-container {
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 5rem; /* Pushes Contact Us & Get in Touch down */
+}
 
-      .contact-form {
+
+      .contact-form, .contact-info {
         flex: 1;
-        max-width: 500px;
+        min-width: 300px;
+      }
+
+      .contact-form h2, .contact-info h2 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        text-align: left;
       }
 
       .form-group {
@@ -125,7 +119,7 @@
       .form-group textarea {
         width: 100%;
         padding: 1rem;
-        font-size: 1.6rem;
+        font-size: 2.5rem;
         color: white;
         background-color: #191919;
         border: 1px solid #e3651d;
@@ -139,37 +133,59 @@
       }
 
       .contact-info {
-        flex: 1;
-        max-width: 400px;
-        text-align: center;
-      }
-
-      .contact-info h3 {
-        font-size: 3rem;
-        margin-bottom: 1.5rem;
+        text-align: left;
       }
 
       .contact-info p {
-        font-size: 1.6rem;
+        font-size: 2.5rem;
         margin-bottom: 1rem;
       }
 
-      .contact-info a.highlight-email {
+      .highlight-email {
         color: white;
         transition: color 0.3s ease;
       }
 
-      .contact-info a.highlight-email:hover {
+      .highlight-email:hover {
         color: #ff7700;
       }
 
       .social-icons a {
-        display: inline-block;
-        margin: 0 1rem;
+  display: inline-flex;  /* Keeps icons properly aligned */
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* Removes underline */
+  background: none !important;  /* Ensures no background */
+  border: none !important;  /* Removes any border */
+  border-radius: 0 !important;  /* Ensures no rounded shape */
+  padding: 0;  /* Removes extra space */
+  margin: 13px; /* Adds spacing between icons */
+  width: auto; /* Prevents unwanted sizing */
+  height: auto;
+  box-shadow: none !important;  /* Removes any shadow effect */
+}
+
+.social-icons i {
+  font-size: 40px;  /* Ensures uniform size */
+  color: inherit; /* Uses default color */
+  background: transparent !important; /* Forces no background */
+  border: none !important; /* Removes border */
+  padding: 0; /* Removes extra space */
+}
+      .social-icons a:hover {
+        transform: scale(1.2);
       }
 
-      header {
-        margin-bottom: 5rem;
+      @media (max-width: 768px) {
+        .contact-container {
+          flex-direction: column;
+          align-items: center;
+          gap: 3rem;
+        }
+
+        .contact-form, .contact-info {
+          width: 100%;
+        }
       }
     </style>
   </body>
