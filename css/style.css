@@ -84,17 +84,20 @@ nav a.active {
   }
 
   nav a {
-    display: block;
-    font-size: 2rem;
-    margin: 3rem 0;
+    color: white;
+    margin-left: 4rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    border-bottom: 3px solid transparent; /* Set default border */
+    transition: border-color 0.3s ease, color 0.3s ease; /* Smooth transition */
   }
-
-  nav a:hover,
+  
   nav a.active {
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border-bottom: 0.5rem solid #e3651d;
+    color: #e3651d;
+    border-bottom: 3px solid #e3651d; /* Same border size, just change color */
   }
+  
+  
 }
 
 section {
