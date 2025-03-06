@@ -12,15 +12,71 @@
   </head>
   <body>
     <header>
-      <a href="#" class="logo">Tamzidan</a>
+      <a href="#" class="logo">Abid Solihin</a>
       <nav>
         <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="skills.html">Skills</a>
+        <a href="experience.html">About</a>
         <a href="education.html" class="active">Education</a>
-        <a href="experience.html">Experience</a>
-        <a href="contact.html">Contact</a>
+        <a href="services.html">Activity</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>  
       </nav>
     </header>
+
+    <section id="education" class="education">
+  
+      <!-- First Education Section -->
+      <div class="education-item">
+        <h2><span>Perak Matriculation College</span></h2>
+        <img src="image\Abid_12.jpg" alt="UTM Logo" width="300">
+        <h2>Physical Science</h2>
+        <h2>Gopeng, Perak</h2>
+      </div>
+    
+      <!-- Second Education Section -->
+      <div class="education-item">
+        <h2><span>Universiti Teknologi Malaysia</span></h2>
+        <img src="image/Abido_1.jpg" alt="UTM Logo" width="300">
+        <h2>Bachelor of Science (Mathematics)</h2>
+        <h2>Skudai, Johor</h2>
+      </div>
+    
+    </section>
+    
+    
+
+    <style>
+.education {
+  display: flex; /* Side-by-side layout */
+  justify-content: center; /* Centers the items horizontally */
+  align-items: center; /* Centers items vertically */
+  gap: 5rem; /* Space between items */
+  padding: 5rem 10%; /* Adjusts spacing */
+  background-color: #161616; /* Background color */
+  color: white; /* Text color */
+  text-align: center; /* Ensures all text is centered */
+}
+
+.education-item {
+  width: 800px; /* Sets a fixed width for uniformity */
+  display: flex;
+  flex-direction: column; /* Ensures text and image stack properly */
+  align-items: center; /* Centers everything inside */
+}
+
+.education-item h2 {
+  font-size: 4rem; /* Increases heading size */
+  font-weight: bold; /* Makes text bold */
+  margin-bottom: 1rem; /* Adds spacing */
+}
+
+.education-item img {
+  width: 800px; /* Fixed width */
+  height: 500px; /* Fixed height */
+  object-fit: cover; /* Prevents distortion */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+    </style>
   </body>
 </html>
