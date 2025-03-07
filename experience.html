@@ -119,14 +119,14 @@
         }
 
         .nav-container .links a:hover {
-            color: rgb(58, 211, 3);
-            border-bottom: 2px solid rgb(58, 211, 3);
+            color: rgb(204, 109, 0);
+            border-bottom: 2px solid rgb(204, 109, 0);
         }
 
         /* Styling untuk link aktif */
         .nav-container .links .active {
-            color: rgb(58, 211, 3);
-            border-bottom: 2px solid rgb(58, 211, 3);
+            color: rgb(204, 109, 0);
+            border-bottom: 2px solid rgb(204, 109, 0);
         }
 
         /* 
@@ -159,7 +159,7 @@
         }
 
         .dropdown .links a:hover {
-            background-color: rgb(58, 211, 3);
+            background-color: rgb(204, 109, 0);
         }
 
         /* About Section Styles */
@@ -192,8 +192,8 @@
 
         .about-header h1 {
             font-size: 2.5rem;
-            color: rgb(58, 211, 3);
-            text-shadow: 0 0 10px rgb(58, 211, 3);
+            color: rgb(204, 109, 0);
+            text-shadow: 0 0 10px rgb(204, 109, 0);
             margin-bottom: 1rem;
         }
 
@@ -218,7 +218,7 @@
         }
 
         .about-text h2 {
-            color: rgb(58, 211, 3);
+            color: rgb(204, 109, 0);
             margin-bottom: 1rem;
         }
 
@@ -244,7 +244,7 @@
         }
 
         .stat-item h3 {
-            color: rgb(58, 211, 3);
+            color: rgb(204, 109, 0);
             font-size: 1.5rem;
             margin-bottom: 0.5rem;
         }
@@ -433,19 +433,15 @@
     <nav>
         <div class="nav-container">
             <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-                Tamzidan <span>Mahdiyin</span>
+                A'bid <span>Solihin</span>
             </div>
             <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a
-                        href="index.html">Home</a></div>
-                <div class="link active" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a
-                        href="about.html">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a
-                        href="skill.html">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a
-                        href="service.html">Service</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
-                        href="contact.html">Contact</a></div>
+                <a href="index.html">Home</a>
+                <a href="experience.html" class='active'>About</a>
+                <a href="education.html">Education</a>
+                <a href="services.html">Activity</a>
+                <a href="skills.html">Skills</a>
+                <a href="contact.html">Contact</a>
             </div>
         </div>
         <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
@@ -607,23 +603,19 @@
             function generateProjectCards() {
                 const projects = [
                     {
-                        title: "E-Commerce Platform",
-                        image: "img/zoro.jpg",
-                        description: "A full-stack e-commerce solution with payment integration",
-                        technologies: ["React", "Node.js", "MongoDB"]
+                        title: "Data Cleaning & Data Analysis",
+                        image: "image/data_cleaning.jpg",
+                        description: "Handling missing values, filtering unrealistic data, and correcting data types.",
+                        technologies: ["PowerBI", "Python"]
                     },
                     {
-                        title: "Portfolio Website",
-                        image: "img/zoro.jpg",
-                        description: "Responsive portfolio website with modern animations",
-                        technologies: ["HTML", "CSS", "JavaScript"]
+                        title: "Airline On-Time Performance Analysis",
+                        image: "image/digital.jpg",
+                        description: "Identify trends, problem areas, and insights about airline punctuality.",
+                        technologies: ["PowerBI","SQL","DAX"]
                     },
-                    {
-                        title: "Task Management App",
-                        image: "img/zoro.jpg",
-                        description: "Mobile-first task management application",
-                        technologies: ["Vue.js", "Firebase"]
-                    }
+
+                    
                     // Add more projects as needed
                 ];
 
