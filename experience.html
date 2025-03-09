@@ -476,13 +476,11 @@
                     <img src="image\abido_123.JPG" alt="About Image">
                 </div>
                 <div class="about-text" data-aos="fade-left" data-aos-duration="1500">
-                    <h1 style="font-size: 30px;">Who Am I?</h1>
-                    <p style="font-size: 15px;">
-                        Versatile professional with a strong foundation in mathematics, problem-solving, and operations management. 
-                        Experienced in training and customer service, with a proven ability to enhance efficiency and drive business improvements. 
-                        Skilled in data analysis, reporting, and decision-making, with technical expertise in Python, SQL, and Excel. 
-                        Passionate about leveraging analytical and interpersonal skills to streamline operations, improve customer experiences, and 
-                        support strategic initiatives.
+                     <p style="font-size: 20px;">
+                        An analytical and results-driven professional with a strong foundation in mathematics, 
+                        data analysis, customer service, and training, currently transitioning into a career as a 
+                        Data Analyst. Adept at leveraging quantitative skills, problem-solving abilities, and data
+                        visualization tools to derive actionable insights that drive business decisions.
                       </p>
 
                     <div class="stats">
@@ -498,13 +496,13 @@
                         </div>
                         <div class="stat-item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600"
                             onclick="showClients()">
-                            <h3>20+</h3>
-                            <p>Happy Clients</p>
+                            <h3>0</h3>
+                            <p>Soon to be updated-2</p>
                         </div>
                         <div class="stat-item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="800"
                             onclick="showAwards()">
-                            <h3>15+</h3>
-                            <p>Awards Won</p>
+                            <h3>0</h3>
+                            <p>Soon to be updated-1 </p>
                         </div>
                     </div>
                 </div>
@@ -536,7 +534,7 @@
             function showProjects() {
                 const aboutContent = document.getElementById('aboutContent');
                 aboutContent.innerHTML = `
-                <a href="about.html" class="back-button" onclick="restoreInitialContent()">
+                <a href="experience.html" class="back-button" onclick="restoreInitialContent()">
                     <i class="fas fa-arrow-left"></i> Back
                 </a>
                 <div class="about-header" data-aos="fade-down" data-aos-duration="1500">
@@ -553,10 +551,10 @@
             function showExperience() {
                 const aboutContent = document.getElementById('aboutContent');
                 aboutContent.innerHTML = `
-                <a href="about.html" class="back-button" onclick="restoreInitialContent()">
+                <a href="experience.html" class="back-button" onclick="restoreInitialContent()">
                     <i class="fas fa-arrow-left"></i> Back
                 </a>
-                <div class="about-header" data-aos="fade-down" data-aos-duration="1500">
+                <div class="experience-header" data-aos="fade-down" data-aos-duration="1500">
                     <h1>My Experience</h1>
                 </div>
                 <div class="content-grid">
@@ -570,10 +568,10 @@
             function showClients() {
                 const aboutContent = document.getElementById('aboutContent');
                 aboutContent.innerHTML = `
-                <a href="about.html" class="back-button" onclick="restoreInitialContent()">
+                <a href="experience.html" class="back-button" onclick="restoreInitialContent()">
                     <i class="fas fa-arrow-left"></i> Back
                 </a>
-                <div class="about-header" data-aos="fade-down" data-aos-duration="1500">
+                <div class="experience-header" data-aos="fade-down" data-aos-duration="1500">
                     <h1>Client Success Stories</h1>
                 </div>
                 <div class="content-grid">
@@ -587,11 +585,11 @@
             function showAwards() {
                 const aboutContent = document.getElementById('aboutContent');
                 aboutContent.innerHTML = `
-                <a href="about.html" class="back-button" onclick="restoreInitialContent()">
+                <a href="experience.html" class="back-button" onclick="restoreInitialContent()">
                     <i class="fas fa-arrow-left"></i> Back
                 </a>
                 <div class="about-header" data-aos="fade-down" data-aos-duration="1500">
-                    <h1>Awards & Recognition</h1>
+                    <h1>Soon to be updated-1 </h1>
                 </div>
                 <div class="content-grid">
                     ${generateAwardCards()}
@@ -640,58 +638,52 @@
 
             // Fungsi pembantu untuk menghasilkan kartu experience
             function generateExperienceCards() {
-                const experiences = [
-                    {
-                        title: "Mathematic Tutor",
-                        image: "image/mathtutor.jpeg",
-                        company: "Freelance",
-                        period: "2018 - 2020",
-                        description: "Enhance comprehension, boost academic performance, and foster a love for math."
-                    },
-                    {
-                        title: "Learning & Development Executive",
-                        image: "image/data_cleaning.jpg",
-                        company: "Suria KLCC",
-                        period: "2023 - 2024",
-                        description: "Designs, implements, and evaluates training programs to enhance employee skills and performance."
-                    },
-                    {
-                        title: "Customer Service Executive",
-                        image: "image/data_cleaning.jpg",
-                        company: "Soong Yuan Carrier & Towing ",
-                        period: "2024 - 2025",
-                        description: "Handles customer inquiries, resolves complaints, and ensures a positive customer experience."
-                    }
-                    // Add more experiences as needed
-                ];
+    const experiences = [
+        {
+            title: "Mathematic Tutor",
+            image: "image/images.jpeg",
+            company: "Freelance",
+            period: "2018 - 2020",
+            description: "Enhance comprehension, boost academic performance, and foster a love for math."
+        },
+        {
+            title: "Learning & Development Executive",
+            image: "image/klcc.jpg",
+            company: "Suria KLCC",
+            period: "2023 - 2024",
+            description: "Designs, implements, and evaluates training programs to enhance employee skills and performance."
+        },
+        {
+            title: "Customer Service Executive",
+            image: "image/sy.png",
+            company: "Soong Yuan Carrier & Towing",
+            period: "2024 - 2025",
+            description: "Handles customer inquiries, resolves complaints, and ensures a positive customer experience."
+        }
+    ];
 
-                return experiences.map(exp => `
-                <div class="content-card" data-aos="fade-up">
-                    <div class="card-info">
-                        <h3>${exp.title}</h3>
-                        <h4>${exp.company}</h4>
-                        <p class="period">${exp.period}</p>
-                        <p>${exp.description}</p>
-                    </div>
-                </div>
-                
-            `).join('');
-            }
-
+    return experiences.map(exp => `
+        <div class="content-card" data-aos="fade-up">
+            <div class="card-image">
+                <img src="${exp.image}" alt="${exp.title}">
+            </div>
+            <div class="card-info">
+                <h3>${exp.title}</h3>
+                <h4>${exp.company}</h4>
+                <p class="exp-period">${exp.period}</p>
+                <p class="exp-description">${exp.description}</p>
+            </div>
+        </div>
+    `).join('');
+}
             // Fungsi pembantu untuk menghasilkan kartu client
             function generateClientCards() {
                 const clients = [
                     {
-                        name: "Ell Udin",
-                        company: "Innovation Corp",
-                        image: "img/zoro.jpg",
-                        testimonial: "Outstanding work on our company website redesign!"
-                    },
-                    {
-                        name: "Ell Ucup",
-                        company: "Tech Startup",
-                        image: "img/zoro.jpg",
-                        testimonial: "Delivered our app ahead of schedule with excellent quality"
+                        name: "Soon to be updated-2",
+                        company: "Soon to be updated-2",
+                        image: "Soon to be updated-2",
+                        testimonial: "Soon to be updated-2"
                     }
                     // Add more clients as needed
                 ];
@@ -714,15 +706,11 @@
             function generateAwardCards() {
                 const awards = [
                     {
-                        title: "Best Web Design",
-                        organization: "Design Awards 2023",
-                        description: "Recognition for exceptional web design and user experience"
+                        title: "Soon to be updated-1 ",
+                        organization: "Soon to be updated-1 ",
+                        description: "Soon to be updated-1 "
                     },
-                    {
-                        title: "Innovation Award",
-                        organization: "Tech Summit 2022",
-                        description: "Awarded for innovative use of emerging technologies"
-                    }
+
                     // Add more awards as needed
                 ];
 
@@ -752,7 +740,6 @@
                         <img src="img/zoro.jpg" alt="About Image">
                     </div>
                     <div class="about-text" data-aos="fade-left" data-aos-duration="1500">
-                        <h2>Who Am I?</h2>
                         <p>I'm a passionate developer and designer with a keen eye for detail and a drive for creating
                             innovative digital solutions. With expertise in web development, UI/UX design, and content
                             creation, I bring ideas to life through code and creativity.</p>
@@ -769,12 +756,12 @@
                                 <p>Years Experience</p>
                             </div>
                             <div class="stat-item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600" onclick="showClients()">
-                                <h3>20+</h3>
-                                <p>Happy Clients</p>
+                                <h3> 0 </h3>
+                                <p>Soon to be updated-2</p>
                             </div>
                             <div class="stat-item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="800" onclick="showAwards()">
-                                <h3>15+</h3>
-                                <p>Awards Won</p>
+                                <h3>0</h3>
+                                <p>Soon to be updated-1 </p>
                             </div>
                         </div>
                     </div>
